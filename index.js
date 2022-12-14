@@ -45,7 +45,7 @@ function renderCat(){
         let img_element = `
         <img 
         class="cat-img" 
-        src="./images/${catObject[i].image}"
+        src="../images/${catObject[i].image}"
         alt="${catObject[i].alt}"
         
         `;
