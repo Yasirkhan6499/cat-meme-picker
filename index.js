@@ -25,13 +25,12 @@ function highlightCheckedOption(e){
 }
 
 function closeModal(){
-    memeModal.style.display = 'none'
+    memeModal.style.display = 'none';
 }
 main_section.addEventListener("click",(e)=>{
     console.log(e.target.id);
     if(isDisplayed && e.target.id!=="get-image-btn"){
     closeModal();
-    console.log("close the modalll");
     }
 });
 
@@ -45,7 +44,7 @@ function renderCat(){
         let img_element = `
         <img 
         class="cat-img" 
-        src="../images/${catObject[i].image}"
+        src="./images/${catObject[i].image}"
         alt="${catObject[i].alt}"
         
         `;
@@ -68,7 +67,7 @@ function renderCat(){
             memeModalInner.classList.remove("more-memes"); 
             memeModalInner.classList.add("single-meme");
             memeModalInner.innerHTML += img_element+">";
-         console.log("single meme");   
+           
         }
     }
 
